@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4DB11B1E00C4A000DC8064 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4DB11A1E00C4A000DC8064 /* Post.swift */; };
+		EF4DB11D1E00C6AE00DC8064 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4DB11C1E00C6AE00DC8064 /* User.swift */; };
+		EF4DB11F1E00C7A400DC8064 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4DB11E1E00C7A400DC8064 /* Comment.swift */; };
+		EF7DDA491E02E5D800F572D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DDA481E02E5D800F572D6 /* DetailViewController.swift */; };
 		EFC8250C1E00AFB200C8276B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8250B1E00AFB200C8276B /* AppDelegate.swift */; };
 		EFC8250E1E00AFB200C8276B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8250D1E00AFB200C8276B /* ViewController.swift */; };
 		EFC825111E00AFB200C8276B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC8250F1E00AFB200C8276B /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF4DB11A1E00C4A000DC8064 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EF4DB11C1E00C6AE00DC8064 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF4DB11E1E00C7A400DC8064 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		EF7DDA481E02E5D800F572D6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EFC825081E00AFB200C8276B /* Network Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC8250B1E00AFB200C8276B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC8250D1E00AFB200C8276B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,11 +45,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF4DB1121E00B5AA00DC8064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7DDA4A1E03548A00F572D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF4DB11A1E00C4A000DC8064 /* Post.swift */,
+				EF4DB11C1E00C6AE00DC8064 /* User.swift */,
+				EF4DB11E1E00C7A400DC8064 /* Comment.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EF7DDA4E1E03597600F572D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFC8250D1E00AFB200C8276B /* ViewController.swift */,
+				EF7DDA481E02E5D800F572D6 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		EFC824FF1E00AFB100C8276B = {
 			isa = PBXGroup;
 			children = (
 				EFC8250A1E00AFB200C8276B /* Network Example */,
 				EFC825091E00AFB200C8276B /* Products */,
+				EF4DB1121E00B5AA00DC8064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +91,10 @@
 		EFC8250A1E00AFB200C8276B /* Network Example */ = {
 			isa = PBXGroup;
 			children = (
-				EFC8250B1E00AFB200C8276B /* AppDelegate.swift */,
-				EFC8250D1E00AFB200C8276B /* ViewController.swift */,
+				EF7DDA4A1E03548A00F572D6 /* Model */,
+				EF7DDA4E1E03597600F572D6 /* Controller */,
 				EFC8250F1E00AFB200C8276B /* Main.storyboard */,
+				EFC8250B1E00AFB200C8276B /* AppDelegate.swift */,
 				EFC825151E00AFB200C8276B /* Assets.xcassets */,
 				EFC825171E00AFB200C8276B /* LaunchScreen.storyboard */,
 				EFC8251A1E00AFB200C8276B /* Info.plist */,
@@ -99,7 +135,7 @@
 				TargetAttributes = {
 					EFC825071E00AFB100C8276B = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = K8NRUJWVV9;
+						DevelopmentTeam = U7QG5FXY5E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC825141E00AFB200C8276B /* Network_Example.xcdatamodeld in Sources */,
+				EF4DB11F1E00C7A400DC8064 /* Comment.swift in Sources */,
 				EFC8250E1E00AFB200C8276B /* ViewController.swift in Sources */,
 				EFC8250C1E00AFB200C8276B /* AppDelegate.swift in Sources */,
+				EF4DB11D1E00C6AE00DC8064 /* User.swift in Sources */,
+				EF4DB11B1E00C4A000DC8064 /* Post.swift in Sources */,
+				EF7DDA491E02E5D800F572D6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +248,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -251,10 +292,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -263,12 +305,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K8NRUJWVV9;
+				DEVELOPMENT_TEAM = U7QG5FXY5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Network Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsi.Network-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -276,12 +324,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K8NRUJWVV9;
+				DEVELOPMENT_TEAM = U7QG5FXY5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Network Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsi.Network-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -304,6 +358,7 @@
 				EFC8251F1E00AFB200C8276B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
